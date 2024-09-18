@@ -1,23 +1,41 @@
 body {
   font-family: "Lato", sans-serif;
-  color: #333;
-  margin: 0;
   padding: 0;
   background-color: hsl(35.1, 71.9%, 88.8%);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  height: 95vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  height: 100vh;
+  gap: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
+}
+
+footer {
+  color: hsl(36, 20%, 59%);
+  font-family: "Cormorant Garamond", serif;
 }
 
 h1 {
   font-family: "Cormorant Garamond", serif;
   font-size: 4rem;
   font-weight: 600;
-  color: #2c3e50;
   margin: 0;
+  color: black;
 }
 
 a {
@@ -37,4 +55,39 @@ a:hover {
 .centered-image {
   height: auto;
   width: 80px;
+}
+
+/* Journal */
+
+.journal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+a.journal-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 2px solid hsl(36, 16%, 44%);
+  color: hsl(36, 16%, 44%);
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.journal-entry:hover {
+  padding: 30px;
+}
+
+.journal-date {
+  font-weight: 600;
+}
+
+.journal-title {
+  font-weight: 400;
 }
